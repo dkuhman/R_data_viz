@@ -13,6 +13,7 @@ The code also includes a call to geom_jitter(), also grouped by position, which 
 <img src="media/boxplot_geompoint.jpg" width="50%">
 
 ## Scatter Plots
+### ggplot_scatterplot.R
 This file shows a simple examples of scatter plots (goals scored versus time on ice by NHL players). The tidy portion of the code also provides useful information on subsetting data based on column number and variable-specific filtering, changing column data types within a data.frame, and string location and replacement. 
 The script has an example of an ungrouped scatter plot:
 
@@ -27,6 +28,7 @@ Finally, the code includes a call to geom_smooth(), which adds a best fit line:
 <img src="media/scatter_bfline.jpg" width="50%">
 
 ## Histograms
+### ggplot_histogram.R
 
 ## Heat Mapped Correlation Matrix
 
