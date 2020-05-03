@@ -46,4 +46,3 @@ Finally, the code includes a call to geom_density(), which includes a density di
 
 ## Facet Wrapping
 
-## Allucial Plot
