@@ -7,7 +7,7 @@ library('tidyverse')
 library("ggplot2")
 
 #Load data
-mydata<-read.csv('C:/Users/danielkuhman/Google Drive/R/data_viz/skater_stats.csv')
+mydata<-read.csv('C:/Users/danielkuhman/Google Drive/R/data_viz/data/skater_stats.csv')
 
 #Prep data for plotting
 {
@@ -44,10 +44,43 @@ mydata<-read.csv('C:/Users/danielkuhman/Google Drive/R/data_viz/skater_stats.csv
 plot_data<-mydata %>% 
   filter(Season == '2018')
 
+#Basic violin plot
 ggplot(plot_data, aes(x=Pos, y=G, group=Pos))+
-  geom_boxplot(aes(fill=Pos), lwd=2, color='black',
+  geom_violin(aes(fill=Pos), lwd=2, color='black',
+              outlier.color = 'white')+
+  theme_classic()+
+  xlab('Position')+
+  ylab('Goals')+
+  theme(
+    axis.title.x = element_text(color="black", face = 'bold', size=20, margin = margin(t = 30, r = 0, b = 0, l = 0)),
+    axis.title.y = element_text(color="black", face = 'bold', size=20, margin = margin(t = 0, r = 30, b = 0, l = 0)),
+    axis.text = element_text(color = 'black',size=14),
+    axis.line = element_line(size=1),
+    legend.position = 'none'
+  )
+
+#Basic violin plot with coord_flip
+ggplot(plot_data, aes(x=Pos, y=G, group=Pos))+
+  geom_violin(aes(fill=Pos), lwd=2, color='black',
+              outlier.color = 'white')+
+  coord_flip()+
+  theme_classic()+
+  xlab('Position')+
+  ylab('Goals')+
+  theme(
+    axis.title.x = element_text(color="black", face = 'bold', size=20, margin = margin(t = 30, r = 0, b = 0, l = 0)),
+    axis.title.y = element_text(color="black", face = 'bold', size=20, margin = margin(t = 0, r = 30, b = 0, l = 0)),
+    axis.text = element_text(color = 'black',size=14),
+    axis.line = element_line(size=1),
+    legend.position = 'none'
+  )
+
+#Plot violin with box plots inside
+ggplot(plot_data, aes(x=Pos, y=G, group=Pos))+
+  geom_violin(aes(fill=Pos), lwd=2, color='black',
                outlier.color = 'white')+
-  geom_jitter(color='black', width = 0.3, size=2, alpha=0.5)+
+  geom_boxplot(fill='white', color='black', width=0.1,
+               lwd=1)+
   theme_classic()+
   xlab('Position')+
   ylab('Goals')+
