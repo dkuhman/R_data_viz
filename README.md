@@ -1,6 +1,6 @@
 # Data Visualization Using R
 # R_data_viz
-This repository houses R scripts for data visualization
+This repository houses R scripts for data visualization. The point of these scripts is not to present meaningful data analyses, but simply to provide examples of common data visualization tools. All scripts are written in R, using tidyverse and ggplot2 libraries.
 
 ## Box Plots
 ### ggplot_boxplot.R
