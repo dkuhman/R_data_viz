@@ -60,9 +60,43 @@ ggplot(mydata, aes(x=G))+
     axis.line = element_line(size=1)
     )
 
-#Basic Grouped Histogram
+#Basic Grouped Histogram, Position Dodge
 ggplot(mydata, aes(x=G))+
   geom_histogram(aes(fill=Pos), lwd=1.5, color='black')+
+  theme_classic()+
+  xlab('Goals')+
+  ylab('Counts')+
+  theme(
+    axis.title.x = element_text(color="black", face = 'bold', size=25, margin = margin(t = 30, r = 0, b = 0, l = 0)),
+    axis.title.y = element_text(color="black", face = 'bold', size=25, margin = margin(t = 0, r = 30, b = 0, l = 0)),
+    axis.text = element_text(color = 'black',size=14),
+    axis.line = element_line(size=1),
+    legend.position = 'top',
+    legend.title = element_blank(),
+    legend.text = element_text(color='black', size = 20,  margin = margin(t = 0, r = 30, b = 0, l = 0))
+  )
+
+#Basic Grouped Histogram, Position Dodge
+ggplot(mydata, aes(x=G))+
+  geom_histogram(aes(fill=Pos), lwd=1.5, color='black',
+                 position = 'dodge')+
+  theme_classic()+
+  xlab('Goals')+
+  ylab('Counts')+
+  theme(
+    axis.title.x = element_text(color="black", face = 'bold', size=25, margin = margin(t = 30, r = 0, b = 0, l = 0)),
+    axis.title.y = element_text(color="black", face = 'bold', size=25, margin = margin(t = 0, r = 30, b = 0, l = 0)),
+    axis.text = element_text(color = 'black',size=14),
+    axis.line = element_line(size=1),
+    legend.position = 'top',
+    legend.title = element_blank(),
+    legend.text = element_text(color='black', size = 20,  margin = margin(t = 0, r = 30, b = 0, l = 0))
+  )
+
+#Basic Grouped Histogram, Position Identity
+ggplot(mydata, aes(x=G))+
+  geom_histogram(aes(fill=Pos), lwd=1.5, color='black',alpha=0.5,
+                 position = 'identity')+
   theme_classic()+
   xlab('Goals')+
   ylab('Counts')+
