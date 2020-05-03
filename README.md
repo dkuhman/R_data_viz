@@ -54,4 +54,13 @@ The code also includes an example that plots the correlation coefficient in text
 <img src="media/cormat_numbs.jpg" width="50%">
 
 ## Facet Wrapping
+### ggplot_facetwrap_histos.R
+This script provides examples of facet wrapped histograms (distribution of goals within each NHL team during the 2018 season). The tidy portion of the code also provides useful information on subsetting data based on column number and variable-specific filtering, changing column data types within a data.frame, and string location and replacement. 
+The script has an example of a simple facet wrap:
 
+<img src="media/facet_wrap_basic.jpg" width="50%">
+
+The code also includes examples with added complexity (grouping by a variable within each team and adding density): 
+
+<img src="media/facet_wrap_grouped.jpg" width="50%" display="block"> 
+<img src="media/facet_wrap_density.jpg" width="50%" display="block">
