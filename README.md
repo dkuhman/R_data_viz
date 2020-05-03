@@ -4,7 +4,7 @@ This repository houses R scripts for data visualization. The point of these scri
 
 ## Box Plots
 ### ggplot_boxplot.R
-This file shows a simple example of a grouped box plot (goals scored by NHL players during the 2018 season, grouped by position). The tidy portion of the code also provides useful information on subsetting data based on column number and variable-specific filtering, changing column data types within a data.frame, and string location and replacement. 
+This script provides a simple example of a grouped box plot (goals scored by NHL players during the 2018 season, grouped by position). The tidy portion of the code also provides useful information on subsetting data based on column number and variable-specific filtering, changing column data types within a data.frame, and string location and replacement. 
 
 <img src="media/boxplot_basic.jpg" width="50%">
 
@@ -14,7 +14,7 @@ The code also includes a call to geom_jitter(), also grouped by position, which 
 
 ## Scatter Plots
 ### ggplot_scatterplot.R
-This file shows a simple examples of scatter plots (goals scored versus time on ice by NHL players). The tidy portion of the code also provides useful information on subsetting data based on column number and variable-specific filtering, changing column data types within a data.frame, and string location and replacement. 
+This script provides simple examples of scatter plots (goals scored versus time on ice by NHL players). The tidy portion of the code also provides useful information on subsetting data based on column number and variable-specific filtering, changing column data types within a data.frame, and string location and replacement. 
 The script has an example of an ungrouped scatter plot:
 
 <img src="media/scatter_basic.jpg" width="50%">
@@ -29,7 +29,7 @@ Finally, the code includes a call to geom_smooth(), which adds a best fit line:
 
 ## Histograms
 ### ggplot_histogram.R
-This file shows a simple examples of histograms (goals scored in a season, across multiple seasons). The tidy portion of the code also provides useful information on subsetting data based on column number and variable-specific filtering, changing column data types within a data.frame, and string location and replacement. 
+This script provides simple examples of histograms (goals scored in a season, across multiple seasons). The tidy portion of the code also provides useful information on subsetting data based on column number and variable-specific filtering, changing column data types within a data.frame, and string location and replacement. 
 The script has an example of an ungrouped histogram:
 
 <img src="media/histogram_basic.jpg" width="50%">
@@ -43,6 +43,15 @@ Finally, the code includes a call to geom_density(), which includes a density di
 <img src="media/histogram_density.jpg" width="50%">
 
 ## Heat Mapped Correlation Matrix
+### ggplot_cormat.R
+This script provides an example of a heat mapped correlation matrix (from a large NHL dataset). The tidy portion of the code also provides useful information on subsetting data based on column number and variable-specific filtering, changing column data types within a data.frame, string location and replacement, and generating a correlation matrix. 
+The script has an example of a simple matrix:
+
+<img src="media/cormat_basic.jpg" width="50%">
+
+The code also includes an example that plots the correlation coefficient in text over each correlation matrix position: 
+
+<img src="media/cormat_numbs.jpg" width="50%">
 
 ## Facet Wrapping
 
