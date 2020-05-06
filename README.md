@@ -69,6 +69,13 @@ The code also includes an example that plots the correlation coefficient in text
 <img src="media/cormat_numbs.jpg" width="50%">
 
 
+## Ridgeline Plots
+### ggplot_ridgeplot.R
+This script provides a simple example of a grouped ridgeline plot (average avocado prices across months in 2019 grouped by month). The tidy portion of the code also provides useful information on subsetting data using variable-specific filtering, changing column data types within a data.frame, string location and replacement, and adding column data using mutate(). 
+
+<img src="media/ridgeplot_basic.png" width="50%">
+
+
 ## Facet Wrapping
 ### ggplot_facetwrap_histos.R
 This script provides examples of facet wrapped histograms (distribution of goals within each NHL team during the 2018 season). The tidy portion of the code also provides useful information on subsetting data based on column number and variable-specific filtering, changing column data types within a data.frame, and string location and replacement. 
