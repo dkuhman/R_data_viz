@@ -25,6 +25,13 @@ The code also includes a call to geom_boxplot(), also grouped by position, which
 <img src="media/violin_boxplot.jpg" width="50%">
 
 
+## Line Plot
+### ggplot_lineplot.R
+This script provides a simple example of a line plot (high temperature across days of September in Birmingham, AL). The tidy portion of the code also provides useful information on subsetting data based on column number and variable-specific filtering, and changing column data types within a data.frame. 
+
+<img src="media/lineplot_basic.jpg" width="50%">
+
+
 ## Scatter Plots
 ### ggplot_scatterplot.R
 This script provides simple examples of scatter plots (goals scored versus time on ice by NHL players). The tidy portion of the code also provides useful information on subsetting data based on column number and variable-specific filtering, changing column data types within a data.frame, and string location and replacement. 
