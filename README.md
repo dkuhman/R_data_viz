@@ -22,6 +22,8 @@ The code also includes a call to geom_jitter(), also grouped by position, which 
 ### Box Plot + Connected Points
 **Code File:** ggplot_point_boxplot_combo.R
 
+**Video Tutorial:** https://www.youtube.com/watch?v=lIWE_7OS9N4&t=32s
+
 **Description:** This script provides an example of grouped boxplots and connected points on a single plot. This type of figure can be used, for example, to show group- and individual-level responses to an intervention: 
 
 <img src="media/Rplotpoint_boxplot_combo.png" width="50%">
