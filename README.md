@@ -43,7 +43,20 @@ The code also includes a call to geom_boxplot(), also grouped by position, which
 
 ---
 
-### Line Plot
+### Grouped Continuous Line Plot
+**Code File:** ggplot_grouped_continuous_data.R
+
+**Data File:** data/continuous_grf_curves.xlsx
+
+**Video Tutorial:** https://www.youtube.com/watch?v=rQZ8u1cbycg&t=1s
+
+**Description:** This script provides a simple example of a grouped line plot, showing the mean and standrad deviation (as colored ribbons) of a continuous variable for three separate groups. The continuous variable in this example is the anteroposterior ground reaction force captured during a dynamic postural disturbance.  
+
+<img src="media/ggplot_grouped_continuous_data.png" width="50%">
+
+---
+
+### Basic Line Plot
 **Code File:** ggplot_lineplot.R
 
 **Description:** This script provides a simple example of a line plot (high temperature across days of September in Birmingham, AL). The tidy portion of the code also provides useful information on subsetting data based on column number and variable-specific filtering, and changing column data types within a data.frame. 
