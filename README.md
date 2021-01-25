@@ -85,6 +85,17 @@ Finally, the code includes a call to geom_smooth(), which adds a best fit line:
 
 ---
 
+### Scatter Plots with Marginal Histograms
+**Code File:** ggplot_marginal_distributions.R
+
+**Video Tutorial:** https://www.youtube.com/watch?v=NApff-foQn4&feature=youtu.be
+
+**Description:** This script provides a simple examples of a scatter plot with histograms plotted in the margins. Note that the video tutorial also includes instructions for adding density and box plots to the margins.
+
+<img src="media/scatter_marginal_histograms.png" width="50%">
+
+---
+
 ### Histograms
 **Code File:** ggplot_histogram.R
 
