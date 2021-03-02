@@ -85,6 +85,17 @@ Finally, the code includes a call to geom_smooth(), which adds a best fit line:
 
 ---
 
+### 2D Density Plots
+**Code File:** ggplot_density2d.R
+
+**Video Tutorial:** https://youtu.be/_eDzjQXaU9s
+
+**Description:** This script provides simple examples of filled and unfilled density plots with jittered data overlayed. Here is an example of a filled density plot:
+
+<img src="media/density2d_filled.jpeg" width="50%">
+
+---
+
 ### Scatter Plots with Marginal Histograms
 **Code File:** ggplot_marginal_distributions.R
 
